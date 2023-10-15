@@ -12,12 +12,10 @@ function About(){
         <h1>About the Developer</h1>
         <div id="About">
             <img id="AboutPic" src={mainPicture}></img>
-            <p id="AboutWords">A very normal guy who has a website to upload music scores, arranged by yours truly.<br/>
-            Feel free to browse around!</p>
+            <p id="AboutWords">A very normal guy who has a website to upload music scores, arranged by yours truly. 
+            <br/>Feel free to browse around!
+            <br/>Send orders to: <a href="mailto:yeohth231@gmail.com"><i class="fas fa-envelope"></i></a>, Thank you :D</p>
         </div>
-        <footer>
-            Made with ❤️ by YeohTH
-        </footer>
         </>
     )
 }
