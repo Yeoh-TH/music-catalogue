@@ -10,6 +10,7 @@
   --navyBlue: hsl(212, 100%, 18%);
   --darkerNavy: hsl(212, 100%, 28%);
   --lightRed: hsl(360, 78%, 62%);
+  --lighterRed: hsl(360, 48%, 62%);
   --lightGrey: hsl(37, 28%, 85%);
   --attentionGreen: hsl(100, 100%, 38%);
   --attentionDarkGreen: hsl(100, 100%, 28%);
@@ -56,13 +57,21 @@
   background-color: var(--darkerNavy);
 }
 
-
-
 h1{
   width: 100%;
   font-size: 5vw;
   text-align: center;
   background-color: var(--lightRed);
+  border-radius: 15px;
+}
+
+h2{
+  width: 98%;
+  font-size: 4vw;
+  text-align: center;
+  background-color: var(--lighterRed);
+  border-radius: 10px;
+  padding: 1vw;
 }
 
 #About{
@@ -129,6 +138,17 @@ footer{
   transition: 1s;
 }
 
+#requestsExp{
+  background-color: var(--navyBlue);
+  font-size: 3vw;
+  padding: 1vw;
+}
+
+i{
+  font-size: 4vw;
+  color: var(--lightGrey);
+}
+
 @media only screen and (max-width: 500px){
   #About{
     display: block;
@@ -151,12 +171,12 @@ footer{
     text-align: center;
   }
   .navbar-button{
-    font-size: 8vw;
-    margin-left: 2vw;
+    font-size: 6vw;
+    margin-left: 3vw;
   }
   .navbar-button-active{
-    font-size: 8vw;
-    margin-left: 2vw;
+    font-size: 6vw;
+    margin-left: 3vw;
   }
 
   footer{
@@ -167,6 +187,7 @@ footer{
     padding: 2px;
     margin: 2px;
     display: flex;
+    margin-bottom: 5vw;
   }
   
   .scoreTitle{

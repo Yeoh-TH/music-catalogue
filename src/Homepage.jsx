@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
-import ToreadorMarch from "/ToreadorMarch.png"
-import PVZMedley from "/PVZMedley.png"
+import ToreadorMarch from "/ToreadorMarch.png";
+import PVZMedley from "/PVZMedley.png";
+import ilVentoDoro from "/ilVentoD'oro.png";
 import "./index.css";
 
 export const scores = {
@@ -17,6 +18,13 @@ export const scores = {
         desc:"Consisting of music composed by Laura Shihigara and Peter McConnell, this mix playlist of iconic tunes from Plants Versus Zombies and Plants Versus Zombies 2 will be sure to be a hit!",
         img: PVZMedley,
         price:"S$29.99"
+    },
+    ilVentoDoro: {
+        name:"il Vento D'oro for ",
+        type:"Duet",
+        desc:"Composed by Yugo Kanno and funded by Dylan Chew, this arrangement of the Jojo score is to be played with emotion by an Alto and a Bass player. Since both players are by their sad lonesome self, there is a great deal of stress to not mess up, but a great show of skill in the process. Best of luck!",
+        img: ilVentoDoro,
+        price:"$10.00"
     }
 }
 
@@ -58,11 +66,13 @@ function Homepage(){
     <>
     <div id="navbar"> 
     <a className="navbar-button-active" href="#/">Scores</a>
+    <a className="navbar-button" href="#/Requests">Requests</a>
     <a className="navbar-button" href="#/About">About Me</a>
     </div>
     <div id="scoresDisplay">   
     {scoreDisplay(scores.ToreadorMarch.name, scores.ToreadorMarch.type, scores.ToreadorMarch.desc,scores.ToreadorMarch.img,scores.ToreadorMarch.price)}
     {scoreDisplayRev(scores.PVZMedley.name,scores.PVZMedley.type,scores.PVZMedley.desc,scores.PVZMedley.img,scores.PVZMedley.price)}
+    {scoreDisplay(scores.ilVentoDoro.name,scores.ilVentoDoro.type,scores.ilVentoDoro.desc,scores.ilVentoDoro.img,scores.ilVentoDoro.price)}
     </div>
     </>
     )
